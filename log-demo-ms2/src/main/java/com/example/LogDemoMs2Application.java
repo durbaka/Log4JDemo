@@ -70,7 +70,7 @@ public class LogDemoMs2Application {
 		
 			
 			newSpan1.logEvent("1-service-bc2");
-			 restTemplate.postForObject("http://192.168.56.1:9002/2",currentSpan, Object.class);
+			 restTemplate.postForObject("http://192.168.172.43:9002/2",currentSpan, Object.class);
 			newSpan1.logEvent("1-service-ac2");
 
 			return "service 1" + " " +  "";
